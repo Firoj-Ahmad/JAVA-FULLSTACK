@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="container">
+        <form action="#">
+            <h2>Registration Form</h2>
+            <div class="inputContainer">
+                <label>Name:</label>
+                <input id="Name" type="text" name="name" placeholder="Enter Full Name">
+            </div><br>
+            <div class="inputContainer">
+                <label for="">Age:</label>
+                <input id="Age" type="number" name="age">
+            </div><br>
+            <div class="inputContainer">
+                <label for="">Gender:</label>
+                <select id="Gender" name="gender" required>
+                    <option value="">Select</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+
+            </div>
+            <br>
+            <div class="inputContainer">
+                <label for="">Email:</label>
+                <input id="Email" type="email" name="email" placeholder="Enter Email">
+            </div><br>
+            <div class="inputContainer">
+                <button type="button" onclick="Submitdetails()">Submit</button>
+            </div>
+            <p id="error"></p>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
